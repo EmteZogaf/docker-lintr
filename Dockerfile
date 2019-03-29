@@ -44,3 +44,5 @@ RUN  R --slave -e "install.packages(c('https://cran.r-project.org/src/contrib/cr
                                     repo=NULL, \
                                     type='source')"
 
+ADD entrypoint.sh /usr/local/bin/entrypoint.sh
+ENTRYPOINT ["entrypoint.sh"]
