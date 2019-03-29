@@ -9,5 +9,5 @@ Run the docker image, mount the R files to be linted and provide the file paths 
 Example:
 
 ```
-docker run --rm -v /home/user/r-package:/package-to-test math2306/lintr /package-to-test/awesome-script.R 1337-script.R
+docker run --rm -v /home/user/r-package:/package-to-test math2306/lintr lint /package-to-test/awesome-script.R 1337-script.R
 ```
